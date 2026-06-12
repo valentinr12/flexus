@@ -1441,6 +1441,15 @@ src="https://www.facebook.com/tr?id=1302522614928367&ev=PageView&noscript=1"
         window.location.href = '/gracias.html';
       }
     });
+    </script>
+<script>
+window.addEventListener('message', function(e) {
+  if (e.origin === 'https://calendly.com' &&
+      e.data.event &&
+      e.data.event.indexOf('calendly.event_scheduled') === 0) {
+    window.location.href = '/gracias.html';
+  }
+});
   </script>
 </body>
 </html>
